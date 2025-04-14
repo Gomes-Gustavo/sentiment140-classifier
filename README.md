@@ -36,18 +36,23 @@ sentiment140-classifier/
 │
 ├── data/
 │   ├── raw/                            # Raw Sentiment140 dataset
+|       └── training.1600000.processed.noemoticon.csv 
 │   ├── processed/                      # Cleaned and preprocessed versions
 │   │   ├── sentiment140_clean.csv
 │   │   ├── sentiment140_tokenized.csv
 │   │   └── sentiment140_vectors.csv
 │
 ├── models/
-│   └── best_lstm_model.keras           # Final trained LSTM model
+│   ├── lstm_sentiment140.h5           # Trained LSTM model
+|   ├── word2vec_model                 # Gensim Word2Vec model
+|   ├── word2vec_model.syn1neg.npy     # Word2Vec weights
+|   └── word2vec_model.wv.vectors.npy  # Word2Vec vectors
+|   
 │
 ├── notebooks/
-│   ├── 01_eda.ipynb                    # Exploratory Data Analysis
-│   ├── 02_text_preprocessing.ipynb    # Text cleaning, lemmatization, tokenization
-│   ├── 03_embeddings.ipynb            # Word2Vec training + tweet vectorization
+│   ├── 01_eda.ipynb                   # Exploratory Data Analysis
+│   ├── 02_preprocessing.ipynb         # Text cleaning, lemmatization, tokenization
+│   ├── 03_word2vec_training.ipynb     # Word2Vec training + tweet vectorization
 │   ├── 04_lstm_training.ipynb         # LSTM model training (Google Colab)
 │   └── 05_model_evaluation.ipynb      # Performance analysis and visualizations
 │
@@ -61,8 +66,8 @@ sentiment140-classifier/
 | Step                             | Notebook                                                    | Description                                                                 |
 | -------------------------------- | ----------------------------------------------------------- | --------------------------------------------------------------------------- |
 | **1. Exploratory Data Analysis** | [01_eda.ipynb](notebooks/01_eda.ipynb)                      | Analyzes tweet length, missing values, sentiment distribution, etc.         |
-| **2. Text Preprocessing**        | [02_text_preprocessing.ipynb](notebooks/02_text_preprocessing.ipynb) | Tokenization, lemmatization, stopword removal, cleaning.                    |
-| **3. Word2Vec Embeddings**       | [03_embeddings.ipynb](notebooks/03_embeddings.ipynb)        | Trains Word2Vec and saves tweet embeddings as vectors.                      |
+| **2. Text Preprocessing**        | [02_text_preprocessing.ipynb](notebooks/02_preprocessing.ipynb) | Tokenization, lemmatization, stopword removal, cleaning.                    |
+| **3. Word2Vec Embeddings**       | [03_embeddings.ipynb](notebooks/03_word2vec_training.ipynb)        | Trains Word2Vec and saves tweet embeddings as vectors.                      |
 | **4. LSTM Model Training**       | [04_lstm_training.ipynb](notebooks/04_lstm_training.ipynb)  | Defines and trains the LSTM model with Dropout and EarlyStopping.           |
 | **5. Evaluation & Visualization**| [05_model_evaluation.ipynb](notebooks/05_model_evaluation.ipynb) | Confusion matrix, classification report, predicted class distribution.      |
 
