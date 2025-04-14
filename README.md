@@ -53,7 +53,7 @@ sentiment140-classifier/
 │   ├── 01_eda.ipynb                   # Exploratory Data Analysis
 │   ├── 02_preprocessing.ipynb         # Text cleaning, lemmatization, tokenization
 │   ├── 03_word2vec_training.ipynb     # Word2Vec training + tweet vectorization
-│   ├── 04_lstm_training.ipynb         # LSTM model training (Google Colab)
+│   ├── 04_lstm_training_colab.ipynb   # LSTM model training (Google Colab)
 │   └── 05_model_evaluation.ipynb      # Performance analysis and visualizations
 │
 ├── requirements.txt                   # Required dependencies
@@ -66,9 +66,9 @@ sentiment140-classifier/
 | Step                             | Notebook                                                    | Description                                                                 |
 | -------------------------------- | ----------------------------------------------------------- | --------------------------------------------------------------------------- |
 | **1. Exploratory Data Analysis** | [01_eda.ipynb](notebooks/01_eda.ipynb)                      | Analyzes tweet length, missing values, sentiment distribution, etc.         |
-| **2. Text Preprocessing**        | [02_text_preprocessing.ipynb](notebooks/02_preprocessing.ipynb) | Tokenization, lemmatization, stopword removal, cleaning.                    |
-| **3. Word2Vec Embeddings**       | [03_embeddings.ipynb](notebooks/03_word2vec_training.ipynb)        | Trains Word2Vec and saves tweet embeddings as vectors.                      |
-| **4. LSTM Model Training**       | [04_lstm_training.ipynb](notebooks/04_lstm_training.ipynb)  | Defines and trains the LSTM model with Dropout and EarlyStopping.           |
+| **2. Text Preprocessing**        | [02_preprocessing.ipynb](notebooks/02_preprocessing.ipynb) | Tokenization, lemmatization, stopword removal, cleaning.                    |
+| **3. Word2Vec Embeddings**       | [03_word2vec_training.ipynb](notebooks/03_word2vec_training.ipynb)        | Trains Word2Vec and saves tweet embeddings as vectors.                      |
+| **4. LSTM Model Training**       | [04_lstm_training_colab.ipynb](notebooks/04_lstm_training_colab.ipynb)  | Defines and trains the LSTM model with Dropout and EarlyStopping.           |
 | **5. Evaluation & Visualization**| [05_model_evaluation.ipynb](notebooks/05_model_evaluation.ipynb) | Confusion matrix, classification report, predicted class distribution.      |
 
 ## Installation
