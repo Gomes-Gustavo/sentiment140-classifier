@@ -76,7 +76,7 @@ sentiment140-classifier/
 Clone the repository and install dependencies in a virtual environment:
 
 ```bash
-git clone https://github.com/GustavoGomes7/sentiment140-classifier.git
+git clone https://github.com/Gomes-Gustavo/sentiment140-classifier.git
 cd sentiment140-classifier
 python -m venv venv
 venv\Scripts\activate
