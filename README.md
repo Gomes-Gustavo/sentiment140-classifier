@@ -123,4 +123,5 @@ This decision was made for two main reasons:
 
 Developed by Gustavo Gomes
 
-- [LinkedIn](https://www.linkedin.com/in/gustavo-gomes-581975333/)
+- [LinkedIn](https://www.linkedin.com/in/gustavo-alves-gomes/)
+
